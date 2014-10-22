@@ -82,9 +82,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 43802221}
+  - 114: {fileID: 43802222}
   m_Layer: 0
   m_Name: Corner
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +106,19 @@ Transform:
   - {fileID: 904232070}
   m_Father: {fileID: 1548136450}
   m_RootOrder: 1
+--- !u!114 &43802222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e20628581e8169944ae6766951046edd,
+    type: 2}
+  m_PrefabInternal: {fileID: 785389695}
+  m_GameObject: {fileID: 43802220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &56996222
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,9 +950,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 288821163}
+  - 114: {fileID: 288821164}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -959,6 +974,19 @@ Transform:
   - {fileID: 1102420752}
   m_Father: {fileID: 1770879681}
   m_RootOrder: 3
+--- !u!114 &288821164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1928182674}
+  m_GameObject: {fileID: 288821162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &293646007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,9 +1211,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 319907615}
+  - 114: {fileID: 319907616}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1206,6 +1235,19 @@ Transform:
   - {fileID: 951285782}
   m_Father: {fileID: 553949593}
   m_RootOrder: 0
+--- !u!114 &319907616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1600260440}
+  m_GameObject: {fileID: 319907614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &345537440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,9 +1704,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485084605}
+  - 114: {fileID: 485084606}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1685,6 +1728,19 @@ Transform:
   - {fileID: 579595960}
   m_Father: {fileID: 98245475}
   m_RootOrder: 2
+--- !u!114 &485084606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 897315862}
+  m_GameObject: {fileID: 485084604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1001 &500624553
 Prefab:
   m_ObjectHideFlags: 0
@@ -2866,9 +2922,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 750263041}
+  - 114: {fileID: 750263042}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2889,6 +2946,19 @@ Transform:
   - {fileID: 526579128}
   m_Father: {fileID: 1770879681}
   m_RootOrder: 2
+--- !u!114 &750263042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 484052486}
+  m_GameObject: {fileID: 750263040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &753036120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,9 +2967,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 753036121}
+  - 114: {fileID: 753036122}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2920,6 +2991,19 @@ Transform:
   - {fileID: 1189214935}
   m_Father: {fileID: 553949593}
   m_RootOrder: 2
+--- !u!114 &753036122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1554250795}
+  m_GameObject: {fileID: 753036120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &760265094
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,9 +3084,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 760764235}
+  - 114: {fileID: 760764236}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3023,6 +3108,19 @@ Transform:
   - {fileID: 293646008}
   m_Father: {fileID: 553949593}
   m_RootOrder: 3
+--- !u!114 &760764236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 377940243}
+  m_GameObject: {fileID: 760764234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1001 &785389695
 Prefab:
   m_ObjectHideFlags: 0
@@ -3659,6 +3757,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 785389695}
   m_GameObject: {fileID: 904232069}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &939195341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 939195343}
+  - 114: {fileID: 939195342}
+  m_Layer: 0
+  m_Name: WaterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &939195342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939195341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216723895374d694b98d8cca922c0bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &939195343
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939195341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.2224474, y: 9.05225945, z: -1.66120625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1001 &942347510
 Prefab:
   m_ObjectHideFlags: 0
@@ -3711,9 +3848,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 944165218}
+  - 114: {fileID: 944165219}
   m_Layer: 0
   m_Name: Corner
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3734,6 +3872,19 @@ Transform:
   - {fileID: 1607257337}
   m_Father: {fileID: 553949593}
   m_RootOrder: 1
+--- !u!114 &944165219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e20628581e8169944ae6766951046edd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1991357360}
+  m_GameObject: {fileID: 944165217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &951285781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,9 +4585,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1194401612}
+  - 114: {fileID: 1194401613}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4457,6 +4609,19 @@ Transform:
   - {fileID: 1888491926}
   m_Father: {fileID: 98245475}
   m_RootOrder: 0
+--- !u!114 &1194401613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 2040364829}
+  m_GameObject: {fileID: 1194401611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1233019367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,9 +4630,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1233019368}
+  - 114: {fileID: 1233019369}
   m_Layer: 0
   m_Name: Corner
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4488,6 +4654,19 @@ Transform:
   - {fileID: 1061836105}
   m_Father: {fileID: 98245475}
   m_RootOrder: 1
+--- !u!114 &1233019369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e20628581e8169944ae6766951046edd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1714645346}
+  m_GameObject: {fileID: 1233019367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1259440929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4784,9 +4963,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1396565085}
+  - 114: {fileID: 1396565086}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4807,6 +4987,19 @@ Transform:
   - {fileID: 715673143}
   m_Father: {fileID: 1548136450}
   m_RootOrder: 0
+--- !u!114 &1396565086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639443508}
+  m_GameObject: {fileID: 1396565084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1398421223
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,9 +5208,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1490015004}
+  - 114: {fileID: 1490015005}
   m_Layer: 0
   m_Name: Corner
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5038,6 +5232,19 @@ Transform:
   - {fileID: 1879856469}
   m_Father: {fileID: 1770879681}
   m_RootOrder: 1
+--- !u!114 &1490015005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e20628581e8169944ae6766951046edd,
+    type: 2}
+  m_PrefabInternal: {fileID: 722419786}
+  m_GameObject: {fileID: 1490015003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1540133265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5046,9 +5253,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1540133266}
+  - 114: {fileID: 1540133267}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5069,6 +5277,19 @@ Transform:
   - {fileID: 78633491}
   m_Father: {fileID: 1548136450}
   m_RootOrder: 3
+--- !u!114 &1540133267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1434918220}
+  m_GameObject: {fileID: 1540133265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1548136449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,9 +5373,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1563822346}
+  - 114: {fileID: 1563822347}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5175,6 +5397,19 @@ Transform:
   - {fileID: 870391871}
   m_Father: {fileID: 1770879681}
   m_RootOrder: 0
+--- !u!114 &1563822347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 942347510}
+  m_GameObject: {fileID: 1563822345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1575828330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,9 +5766,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1659670276}
+  - 114: {fileID: 1659670277}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5554,6 +5790,19 @@ Transform:
   - {fileID: 189001939}
   m_Father: {fileID: 1548136450}
   m_RootOrder: 2
+--- !u!114 &1659670277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1087917920}
+  m_GameObject: {fileID: 1659670275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
 --- !u!1 &1706116517
 GameObject:
   m_ObjectHideFlags: 0
@@ -6626,9 +6875,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2144788880}
+  - 114: {fileID: 2144788881}
   m_Layer: 0
   m_Name: Hallway
-  m_TagString: Untagged
+  m_TagString: Hallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6649,3 +6899,16 @@ Transform:
   - {fileID: 1259440930}
   m_Father: {fileID: 98245475}
   m_RootOrder: 3
+--- !u!114 &2144788881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a67844899f27c804bb880e559987b9ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 500624553}
+  m_GameObject: {fileID: 2144788879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba274e12c3be3db4a90bb08d407c21b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 4
