@@ -13,6 +13,7 @@ public class Hallway : MonoBehaviour {
     void Start()
     {
         adjacentObjects = GetAdjacentHallways(gameObject);
+        WaterManager.shittyInstance.hallways.Add(gameObject);
     }
 
     private static bool TestDistance(Vector3 a, Vector3 b)
