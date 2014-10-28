@@ -4,6 +4,7 @@ using System.Collections;
 public class Leak : MonoBehaviour {
 
     public float rate;
+    public GameObject hallway;
 
 	// Use this for initialization
 	void Start () {
