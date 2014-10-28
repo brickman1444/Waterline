@@ -3,9 +3,16 @@ using System.Collections;
 
 public class WaterMover : MonoBehaviour {
 
+    public static WaterMover shittyInstance = null;
+
     public float minY;
     public float maxY;
-    public float speed;
+    public float rate;
+
+    void Awake()
+    {
+        shittyInstance = this;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -19,14 +26,16 @@ public class WaterMover : MonoBehaviour {
 	    
         Vector3 pos = transform.position;
 
-        if (Input.GetKey(KeyCode.O))
+        pos.y += rate * Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.O))
         {
-            pos.y += speed * Time.deltaTime;
+            rate += 1;
         }
 
-        if (Input.GetKey(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            pos.y -= speed * Time.deltaTime;
+            rate -= 1;
         }
 
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
