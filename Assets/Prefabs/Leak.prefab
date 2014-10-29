@@ -11,7 +11,7 @@ GameObject:
   - 15: {fileID: 1500000}
   - 12: {fileID: 1200000}
   - 26: {fileID: 2600000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Water Fountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  - 135: {fileID: 13500000}
+  m_Layer: 8
   m_Name: Leak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: -.687364638, w: .726312518}
-  m_LocalPosition: {x: -2.59844017, y: 1.8397491, z: 0}
+  m_LocalPosition: {x: -1.87813604, y: 2.51020002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -159,6 +160,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rate: .00999999978
   hallway: {fileID: 0}
+--- !u!135 &13500000
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
