@@ -2775,6 +2775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009b377a43ad65e41878167d8f94a059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bandaidPrefab: {fileID: 100000, guid: 5364948d28a92be429897d8d314fd460, type: 2}
 --- !u!4 &714465086
 Transform:
   m_ObjectHideFlags: 0
@@ -3805,7 +3806,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1001 &942347510
 Prefab:
   m_ObjectHideFlags: 0
@@ -6066,7 +6067,7 @@ Transform:
   m_LocalScale: {x: 1.22192287, y: 1.22192276, z: .62191081}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &1741496305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7009,7 +7010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
