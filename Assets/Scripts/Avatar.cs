@@ -4,6 +4,7 @@ using System.Collections;
 public class Avatar : MonoBehaviour {
 
     float reachLength = 2.5f;
+    public GameObject bandaidPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +24,13 @@ public class Avatar : MonoBehaviour {
 
             if (Physics.Raycast(ray, out outHitInfo, reachLength, 1 << 8))
             {
+                GameObject bandaid = (GameObject) Instantiate(bandaidPrefab);
+                Transform waterFountainTransform = (Transform)outHitInfo.collider.gameObject.GetComponentInChildren<ParticleRenderer>().gameObject.transform;
+                bandaid.transform.position = waterFountainTransform.position;
+                //bandaid.transform.forward = -waterFountainTransform.up;
+                bandaid.transform.LookAt(transform);
+                //bandaid.transform.rotation = waterFountainTransform.rotation;
+                bandaid.transform.Translate(-waterFountainTransform.up * -.4f);
                 Destroy(outHitInfo.collider.gameObject);
                 Debug.Log("Hit leak");
             }
