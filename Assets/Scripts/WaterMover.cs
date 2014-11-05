@@ -38,6 +38,11 @@ public class WaterMover : MonoBehaviour {
             rate -= 1;
         }
 
+        if (pos.y >= maxY)
+        {
+            Debug.Log("Game Over");
+        }
+
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
         transform.position = pos;
