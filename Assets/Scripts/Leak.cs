@@ -19,11 +19,11 @@ public class Leak : MonoBehaviour {
         rate = _rate;
         hallway = _hallway;
 
-        Debug.Log(rate);
+        //Debug.Log(rate);
 
         float normalizedRate = rate / WaterManager.shittyInstance.maxRate;
 
-        AudioSource audioSource = GetComponent<AudioSource>();
+        AudioSource audioSource = GetComponentInChildren<AudioSource>();
         audioSource.pitch = normalizedRate * 6 - 3;
         audioSource.volume *= normalizedRate;
 
