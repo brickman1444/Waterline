@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Avatar : MonoBehaviour {
 
+    float reachLength = 2.5f;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -19,14 +21,17 @@ public class Avatar : MonoBehaviour {
 
             RaycastHit outHitInfo;
 
-            if (Physics.Raycast(ray, out outHitInfo, 2.5f, 1 << 8))
+            if (Physics.Raycast(ray, out outHitInfo, reachLength, 1 << 8))
             {
                 Destroy(outHitInfo.collider.gameObject);
-                Debug.Log("Hit!");
+                Debug.Log("Hit leak");
             }
-            else
+
+            if (Physics.Raycast(ray, out outHitInfo, reachLength, 1 << 9))
             {
-                Debug.Log("Miss!");
+                Flusher flush = outHitInfo.collider.gameObject.GetComponent<Flusher>();
+                flush.Flush();
+                Debug.Log("Hit button");
             }
         }
 	}
