@@ -11,7 +11,7 @@ public class Avatar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
         {
             Ray ray = new Ray();
             ray.origin = Camera.main.transform.position;

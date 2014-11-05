@@ -3793,6 +3793,7 @@ MonoBehaviour:
   waterPlanes: {fileID: 2143810747}
   leakPrefab: {fileID: 100002, guid: c00ca5e9086453b43a3798f2f02f5990, type: 2}
   waterLevel: 0
+  maxRate: .0199999996
 --- !u!4 &939195343
 Transform:
   m_ObjectHideFlags: 0

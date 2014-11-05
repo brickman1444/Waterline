@@ -12,6 +12,7 @@ public class WaterManager : MonoBehaviour {
     public GameObject leakPrefab;
 
     public float waterLevel = 0;
+    public float maxRate;
 
     void Awake()
     {
@@ -50,6 +51,8 @@ public class WaterManager : MonoBehaviour {
 
         Leak leakComponent = leakObject.GetComponent<Leak>();
 
-        leakComponent.hallway = hallway;
+        float rate = Random.Range(0.001f, maxRate);
+
+        leakComponent.Initialize(hallway, rate);
     }
 }
