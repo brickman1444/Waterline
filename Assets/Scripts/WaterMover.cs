@@ -41,6 +41,7 @@ public class WaterMover : MonoBehaviour {
         if (pos.y >= maxY)
         {
             Debug.Log("Game Over");
+            GameManager.shittyInstance.EndGame();
         }
 
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
