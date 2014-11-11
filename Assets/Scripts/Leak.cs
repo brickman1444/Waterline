@@ -7,6 +7,8 @@ public class Leak : MonoBehaviour {
     public GameObject hallway;
 
     const int maxMinEmission = 75;
+    const float increaseTime = 0.5f;
+    const float increaseLerpPercent = 0.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +23,13 @@ public class Leak : MonoBehaviour {
 
         //Debug.Log(rate);
 
+        UpdateEffects();
+
+        WaterMover.shittyInstance.rate += rate;
+    }
+
+    void UpdateEffects()
+    {
         float normalizedRate = rate / WaterManager.shittyInstance.maxRate;
 
         AudioSource audioSource = GetComponentInChildren<AudioSource>();
@@ -33,14 +42,24 @@ public class Leak : MonoBehaviour {
         emitter.maxEmission *= normalizedRate;
         emitter.minSize *= normalizedRate;
         emitter.maxSize *= normalizedRate;
-
-        WaterMover.shittyInstance.rate += rate;
     }
 
 	// Update is called once per frame
 	void Update () {
 
 	}
+
+    IEnumerator RateIncreaserRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(increaseTime);
+
+            rate += (WaterManager.shittyInstance.maxRate - rate) * increaseLerpPercent;
+            WaterMover.shittyInstance.rate += rate;
+            UpdateEffects();
+        }
+    }
 
     void OnDestroy()
     {
