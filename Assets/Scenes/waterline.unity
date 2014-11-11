@@ -6093,7 +6093,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: a2c78d764ff6730499e2f9948c0a0a61, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -7020,6 +7020,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
       propertyPath: timeMultiplier
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}

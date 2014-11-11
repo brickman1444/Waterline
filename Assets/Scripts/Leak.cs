@@ -7,7 +7,7 @@ public class Leak : MonoBehaviour {
     public GameObject hallway;
 
     const int maxMinEmission = 75;
-    const float increaseTime = 0.5f;
+    const float increaseTime = 2f;
     const float increaseLerpPercent = 0.1f;
 
 	// Use this for initialization
@@ -22,6 +22,8 @@ public class Leak : MonoBehaviour {
         hallway = _hallway;
 
         //Debug.Log(rate);
+
+        StartCoroutine(RateIncreaserRoutine());
 
         UpdateEffects();
 
@@ -55,9 +57,9 @@ public class Leak : MonoBehaviour {
         {
             yield return new WaitForSeconds(increaseTime);
 
-            WaterMover.shittyInstance.rate -= rate; // subtract old rate
-            rate += (WaterManager.shittyInstance.maxRate - rate) * increaseLerpPercent;
-            WaterMover.shittyInstance.rate += rate; // add in new rate
+            float deltaRate = (WaterManager.shittyInstance.maxRate - rate) * increaseLerpPercent;
+            rate += deltaRate;
+            WaterMover.shittyInstance.rate += deltaRate;
             UpdateEffects();
         }
     }
