@@ -6,6 +6,8 @@ public class Flusher : MonoBehaviour {
     public float startingFlushingTime;
     public float flushingRate;
     public float timeMultiplier;
+    public GameObject enabledVisual;
+    public GameObject disabledVisual;
 
     private float flushingTime;
 
@@ -37,14 +39,16 @@ public class Flusher : MonoBehaviour {
     void BeginFlush()
     {
         WaterMover.shittyInstance.rate -= flushingRate;
-        renderer.enabled = false;
         audioSource.Play();
+        enabledVisual.SetActive(false);
+        disabledVisual.SetActive(true);
     }
 
     void EndFlush()
     {
         WaterMover.shittyInstance.rate += flushingRate;
-        renderer.enabled = true;
         audioSource.Stop();
+        enabledVisual.SetActive(true);
+        disabledVisual.SetActive(false);
     }
 }
