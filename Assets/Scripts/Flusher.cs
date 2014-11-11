@@ -3,14 +3,18 @@ using System.Collections;
 
 public class Flusher : MonoBehaviour {
 
-    public float flushingTime;
+    public float startingFlushingTime;
     public float flushingRate;
+    public float timeMultiplier;
+
+    private float flushingTime;
 
     AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
         audioSource = GetComponent<AudioSource>();
+        flushingTime = startingFlushingTime;
 	}
 	
 	// Update is called once per frame
@@ -26,6 +30,7 @@ public class Flusher : MonoBehaviour {
         {
             BeginFlush();
             Invoke(FlushString, flushingTime);
+            flushingTime *= timeMultiplier;
         }
     }
 

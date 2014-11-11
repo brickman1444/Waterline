@@ -6080,8 +6080,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bd2b43940e01d408f9d75fed46a2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flushingTime: 10
+  startingFlushingTime: 10
   flushingRate: .5
+  timeMultiplier: 1.5
 --- !u!82 &1741496306
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7011,6 +7012,14 @@ Prefab:
     - target: {fileID: 400000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
+      propertyPath: startingFlushingTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
+      propertyPath: timeMultiplier
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0379551c5a08d694bbb2f896eda193a4, type: 2}
