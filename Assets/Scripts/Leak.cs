@@ -55,8 +55,9 @@ public class Leak : MonoBehaviour {
         {
             yield return new WaitForSeconds(increaseTime);
 
+            WaterMover.shittyInstance.rate -= rate; // subtract old rate
             rate += (WaterManager.shittyInstance.maxRate - rate) * increaseLerpPercent;
-            WaterMover.shittyInstance.rate += rate;
+            WaterMover.shittyInstance.rate += rate; // add in new rate
             UpdateEffects();
         }
     }
