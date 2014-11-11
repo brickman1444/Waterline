@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour {
             Time.timeScale = 0;
             isGameOver = true;
             gameOverText.gameObject.SetActive(true);
-            gameOverText.text = "Game Over\nYou survived for " + string.Format("{0:n1}", finalTime - initialTime) + "seconds\nPress Enter to return to menu.";
+            gameOverText.text = "Game Over\nYou survived for " + string.Format("{0:n1}", finalTime - initialTime) + " seconds\nPress Enter to return to menu.";
         }
     }
 }
