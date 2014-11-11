@@ -24,9 +24,9 @@ public class Avatar : MonoBehaviour {
 
             if (Physics.Raycast(ray, out outHitInfo, reachLength, 1 << 8))
             {
-                GameObject bandaid = (GameObject) Instantiate(bandaidPrefab);
-                Transform waterFountainTransform = (Transform)outHitInfo.collider.gameObject.GetComponentInChildren<ParticleRenderer>().gameObject.transform;
-                bandaid.transform.position = waterFountainTransform.position;
+               // GameObject bandaid = (GameObject) Instantiate(bandaidPrefab);
+                //Transform waterFountainTransform = (Transform)outHitInfo.collider.gameObject.GetComponentInChildren<ParticleRenderer>().gameObject.transform;
+                //bandaid.transform.position = waterFountainTransform.position;
                 //bandaid.transform.forward = -waterFountainTransform.up;
                 //bandaid.transform.LookAt(transform);
                 //bandaid.transform.rotation = waterFountainTransform.rotation;
