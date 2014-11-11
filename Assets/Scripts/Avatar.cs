@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Avatar : MonoBehaviour {
 
-    float reachLength = 2.5f;
+    float reachLength = 3f;
     public GameObject bandaidPrefab;
 
 	// Use this for initialization
