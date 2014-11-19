@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Hallway : MonoBehaviour {
 
-    List<GameObject> adjacentObjects = new List<GameObject>();
+    //List<GameObject> adjacentObjects = new List<GameObject>();
     static float gridSize = 4;
 
     const float epsilon = 0.1f;
@@ -12,8 +12,8 @@ public class Hallway : MonoBehaviour {
 	// Use this for initialization
     void Start()
     {
-        adjacentObjects = GetAdjacentHallways(gameObject);
-        WaterManager.shittyInstance.connectedHallways.Add(gameObject);
+        //adjacentObjects = GetAdjacentHallways(gameObject);
+        //WaterManager.shittyInstance.connectedHallways.Add(gameObject);
     }
 
     private static bool TestDistance(Vector3 a, Vector3 b)

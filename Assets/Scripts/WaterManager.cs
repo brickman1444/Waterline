@@ -6,13 +6,15 @@ public class WaterManager : MonoBehaviour {
 
     public static WaterManager shittyInstance = null;
 
-    public List<GameObject> connectedHallways = new List<GameObject>();
+    //public List<GameObject> connectedHallways = new List<GameObject>();
+    List<LeakSpawner> leakSpawners = new List<LeakSpawner>();
 
     public GameObject waterPlanes;
     public GameObject leakPrefab;
 
     public float waterLevel = 0;
     public float maxRate;
+    public float minRate;
 
     void Awake()
     {
@@ -21,6 +23,9 @@ public class WaterManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        leakSpawners = new List<LeakSpawner>(FindObjectsOfType<LeakSpawner>());
+
         StartCoroutine(SpawnLeaksRoutine());
 	}
 	
@@ -33,26 +38,37 @@ public class WaterManager : MonoBehaviour {
     {
         while (true)
         {
-            int index = Random.Range(0, connectedHallways.Count);
+            if (leakSpawners.Count != 0)
+            {
+                int index = Random.Range(0, leakSpawners.Count);
 
-            GameObject randomHallway = connectedHallways[index];
-
-            CreateLeak(randomHallway);
+                CreateLeak(leakSpawners[index]);
+            }
 
             yield return new WaitForSeconds(2);
         }
     }
 
-    void CreateLeak(GameObject hallway)
+    public void RemoveLeakSpawner(LeakSpawner leakSpawner)
+    {
+        leakSpawners.Remove(leakSpawner);
+    }
+
+    public void AddLeakSpawner(LeakSpawner leakSpawner)
+    {
+        leakSpawners.Add(leakSpawner);
+    }
+
+    void CreateLeak(LeakSpawner leakSpawner)
     {
         GameObject leakObject = (GameObject) GameObject.Instantiate(leakPrefab);
-        leakObject.transform.position = hallway.transform.position;
-        leakObject.transform.rotation = hallway.transform.rotation;
+        leakObject.transform.position = leakSpawner.gameObject.transform.position;
+        leakObject.transform.rotation = leakSpawner.gameObject.transform.rotation;
 
         Leak leakComponent = leakObject.GetComponent<Leak>();
 
-        float rate = Random.Range(0.001f, maxRate);
+        float rate = Random.Range(minRate, maxRate);
 
-        leakComponent.Initialize(hallway, rate);
+        leakComponent.Initialize(leakSpawner, rate);
     }
 }

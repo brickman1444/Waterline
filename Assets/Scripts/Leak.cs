@@ -4,22 +4,25 @@ using System.Collections;
 public class Leak : MonoBehaviour {
 
     public float rate;
-    public GameObject hallway;
 
     const int maxMinEmission = 75;
     const float increaseTime = 2f;
     const float increaseLerpPercent = 0.1f;
+
+    LeakSpawner leakSpawner;
 
 	// Use this for initialization
 	void Start () {
         
 	}
 
-    public void Initialize(GameObject _hallway, float _rate)
+    public void Initialize(LeakSpawner _leakSpawner, float _rate)
     {
 
         rate = _rate;
-        hallway = _hallway;
+        leakSpawner = _leakSpawner;
+
+        WaterManager.shittyInstance.RemoveLeakSpawner(leakSpawner);
 
         //Debug.Log(rate);
 
@@ -33,6 +36,11 @@ public class Leak : MonoBehaviour {
     void UpdateEffects()
     {
         float normalizedRate = rate / WaterManager.shittyInstance.maxRate;
+
+        if (normalizedRate > 1 || normalizedRate < 0)
+        {
+            Debug.LogError("Invalid normalized rate");
+        }
 
         AudioSource audioSource = GetComponentInChildren<AudioSource>();
         audioSource.pitch = normalizedRate * 6 - 3;
@@ -67,5 +75,6 @@ public class Leak : MonoBehaviour {
     void OnDestroy()
     {
         WaterMover.shittyInstance.rate -= rate;
+        WaterManager.shittyInstance.AddLeakSpawner(leakSpawner);
     }
 }
