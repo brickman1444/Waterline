@@ -2826,7 +2826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009b377a43ad65e41878167d8f94a059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bandaidPrefab: {fileID: 100000, guid: 5364948d28a92be429897d8d314fd460, type: 2}
+  bubbleGumPrefab: {fileID: 100000, guid: d3b957b7a16e57843b9487c8f18b2319, type: 2}
 --- !u!4 &714465086
 Transform:
   m_ObjectHideFlags: 0

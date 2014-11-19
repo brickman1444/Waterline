@@ -4,7 +4,7 @@ using System.Collections;
 public class Avatar : MonoBehaviour {
 
     float reachLength = 3f;
-    public GameObject bandaidPrefab;
+    public GameObject bubbleGumPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -24,9 +24,9 @@ public class Avatar : MonoBehaviour {
 
             if (Physics.Raycast(ray, out outHitInfo, reachLength, 1 << 8))
             {
-               // GameObject bandaid = (GameObject) Instantiate(bandaidPrefab);
-                //Transform waterFountainTransform = (Transform)outHitInfo.collider.gameObject.GetComponentInChildren<ParticleRenderer>().gameObject.transform;
-                //bandaid.transform.position = waterFountainTransform.position;
+                GameObject gum = (GameObject)Instantiate(bubbleGumPrefab);
+                Transform waterFountainTransform = (Transform)outHitInfo.collider.gameObject.GetComponentInChildren<ParticleRenderer>().gameObject.transform;
+                gum.transform.position = waterFountainTransform.position;
                 //bandaid.transform.forward = -waterFountainTransform.up;
                 //bandaid.transform.LookAt(transform);
                 //bandaid.transform.rotation = waterFountainTransform.rotation;
