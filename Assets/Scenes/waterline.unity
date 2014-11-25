@@ -3733,7 +3733,7 @@ Transform:
   - {fileID: 592818638}
   - {fileID: 108486738}
   m_Father: {fileID: 1610706636}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!65 &355888405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15682,7 +15682,7 @@ Transform:
   - {fileID: 1798369715}
   - {fileID: 1166719148}
   m_Father: {fileID: 1610706636}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!65 &1591789624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16140,8 +16140,8 @@ Transform:
   m_Children:
   - {fileID: 722477837}
   - {fileID: 364578427}
-  - {fileID: 1591789623}
   - {fileID: 355888404}
+  - {fileID: 1591789623}
   m_Father: {fileID: 98245475}
   m_RootOrder: 8
 --- !u!114 &1610706637
@@ -16272,7 +16272,7 @@ Transform:
   - {fileID: 997813515}
   - {fileID: 1434244636}
   m_Father: {fileID: 2003985704}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!65 &1618372800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19320,8 +19320,8 @@ Transform:
   m_Children:
   - {fileID: 1414381659}
   - {fileID: 905859874}
-  - {fileID: 2123027493}
   - {fileID: 1618372799}
+  - {fileID: 2123027493}
   m_Father: {fileID: 98245475}
   m_RootOrder: 7
 --- !u!114 &2003985705
@@ -20436,7 +20436,7 @@ Transform:
   - {fileID: 577455087}
   - {fileID: 608602217}
   m_Father: {fileID: 2003985704}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!65 &2123027494
 BoxCollider:
   m_ObjectHideFlags: 0
