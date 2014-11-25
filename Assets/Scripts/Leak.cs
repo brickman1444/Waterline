@@ -8,6 +8,7 @@ public class Leak : MonoBehaviour {
     const int maxMinEmission = 75;
     const float increaseTime = 2f;
     const float increaseLerpPercent = 0.1f;
+    public GameObject bubbleGumPrefab;
 
     LeakSpawner leakSpawner;
 
@@ -72,9 +73,16 @@ public class Leak : MonoBehaviour {
         }
     }
 
+    public void FillLeak()
+    {
+        GameObject gum = (GameObject)Instantiate(bubbleGumPrefab);
+        gum.transform.position = transform.position;
+        gum.GetComponent<GumBlob>().Initialize(leakSpawner);
+        Destroy(gameObject);
+    }
+
     void OnDestroy()
     {
         WaterMover.shittyInstance.rate -= rate;
-        WaterManager.shittyInstance.AddLeakSpawner(leakSpawner);
     }
 }

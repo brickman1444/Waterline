@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: .00999999978
+  bubbleGumPrefab: {fileID: 100000, guid: d3b957b7a16e57843b9487c8f18b2319, type: 2}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

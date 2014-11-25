@@ -12,4 +12,9 @@ public class LeakSpawner : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnDestroy()
+    {
+        Debug.LogError("leak spawner destroyed");
+    }
 }

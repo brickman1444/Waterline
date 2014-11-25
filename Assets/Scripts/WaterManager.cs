@@ -42,7 +42,16 @@ public class WaterManager : MonoBehaviour {
             {
                 int index = Random.Range(0, leakSpawners.Count);
 
-                CreateLeak(leakSpawners[index]);
+                LeakSpawner lastOne = leakSpawners[leakSpawners.Count - 1];
+
+                if (leakSpawners[index] != null)
+                {
+                    CreateLeak(leakSpawners[index]);
+                }
+                else
+                {
+                    Debug.LogError("leak spawning error");
+                }
             }
 
             yield return new WaitForSeconds(2);
