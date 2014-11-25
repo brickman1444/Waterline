@@ -5003,6 +5003,7 @@ GameObject:
   - 114: {fileID: 714465080}
   - 114: {fileID: 714465087}
   - 114: {fileID: 714465083}
+  - 114: {fileID: 714465084}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -5101,6 +5102,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009b377a43ad65e41878167d8f94a059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &714465084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714465079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f7eb0c4a2fafa488e8bee78e9a90c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockCursor: 1
 --- !u!4 &714465086
 Transform:
   m_ObjectHideFlags: 0
