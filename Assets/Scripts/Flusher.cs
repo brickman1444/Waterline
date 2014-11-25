@@ -8,6 +8,7 @@ public class Flusher : MonoBehaviour {
     public float timeMultiplier;
     public GameObject enabledVisual;
     public GameObject disabledVisual;
+    public GameObject lightObject;
 
     private float flushingTime;
 
@@ -42,6 +43,7 @@ public class Flusher : MonoBehaviour {
         audioSource.Play();
         enabledVisual.SetActive(false);
         disabledVisual.SetActive(true);
+        lightObject.SetActive(false);
     }
 
     void EndFlush()
@@ -50,5 +52,6 @@ public class Flusher : MonoBehaviour {
         audioSource.Stop();
         enabledVisual.SetActive(true);
         disabledVisual.SetActive(false);
+        lightObject.SetActive(true);
     }
 }
