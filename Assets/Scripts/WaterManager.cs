@@ -36,6 +36,9 @@ public class WaterManager : MonoBehaviour {
 
     IEnumerator SpawnLeaksRoutine()
     {
+        float waitTime = 2;
+        float percenDecrease = 0.99f;
+
         while (true)
         {
             if (leakSpawners.Count != 0)
@@ -54,7 +57,8 @@ public class WaterManager : MonoBehaviour {
                 }
             }
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(waitTime);
+            waitTime *= percenDecrease;
         }
     }
 
