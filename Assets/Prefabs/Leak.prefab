@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.14452839, y: 1.34715128, z: -4.27313328}
+  m_LocalPosition: {x: 2.25425434, y: 2.54774714, z: -3.54250813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -98,7 +98,7 @@ ParticleAnimator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  Does Animate Color?: 1
+  Does Animate Color?: 0
   colorAnimation[0]:
     serializedVersion: 2
     rgba: 4294967295
