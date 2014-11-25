@@ -87,6 +87,7 @@ GameObject:
   - 124: {fileID: 692614741}
   - 81: {fileID: 692614740}
   - 114: {fileID: 692614745}
+  - 114: {fileID: 692614746}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -170,6 +171,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1c3a20a4fd43d46a403e32783469a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &692614746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692614739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052de2df8d962e34dbf0036f4461bc9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1007843890
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,9 +208,9 @@ GUIText:
   serializedVersion: 3
   m_Text: "You are in a flooding underwater\r\nbuilding. You must try to survive as
     long as \r\npossible. This game is best played with headphones.\r\nMove with WASD.
-    Turn with mouse. Walk \r\nup to a leak and press space to close it. Walk \r\nup
-    to the red button to quickly drain out a lot\r\nof water. It has a cooldown before
-    it can be \r\nused again."
+    Turn with mouse. Walk \r\nup to a leak and click or press space to close it. \r\nClick
+    on the red button or press space to quickly \r\ndrain out a lot of water. It has
+    a cooldown before \r\nit can be used again. Press Esc to leave whenever."
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -300,7 +312,7 @@ GUIText:
   m_GameObject: {fileID: 1663362297}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Waterline
+  m_Text: "Waterline\r\nBy Zac Gross"
   m_Anchor: 1
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
