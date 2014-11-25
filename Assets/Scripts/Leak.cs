@@ -43,6 +43,8 @@ public class Leak : MonoBehaviour {
             Debug.LogError("Invalid normalized rate");
         }
 
+        normalizedRate = 1; // HACK
+
         AudioSource audioSource = GetComponentInChildren<AudioSource>();
         audioSource.pitch = normalizedRate * 6 - 3;
         audioSource.volume *= normalizedRate;

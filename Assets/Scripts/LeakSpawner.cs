@@ -15,6 +15,6 @@ public class LeakSpawner : MonoBehaviour {
 
     void OnDestroy()
     {
-        Debug.LogError("leak spawner destroyed");
+
     }
 }

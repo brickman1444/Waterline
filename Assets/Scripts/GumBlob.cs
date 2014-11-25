@@ -12,6 +12,7 @@ public class GumBlob : MonoBehaviour {
 
     public void Initialize(LeakSpawner _leakSpawner)
     {
+        leakSpawner = _leakSpawner;
         Invoke("Die", 3);
     }
 
