@@ -195,9 +195,10 @@ GUIText:
   m_Enabled: 1
   serializedVersion: 3
   m_Text: "You are in a flooding underwater\r\nbuilding. You must try to survive as
-    long as \r\npossible. Move with WASD. Turn with mouse. Walk \r\nup to a leak and
-    press space to close it. Walk \r\nup to the red button to quickly drain out a
-    lot\r\nof water. It has a cooldown before it can be \r\nused again."
+    long as \r\npossible. This game is best played with headphones.\r\nMove with WASD.
+    Turn with mouse. Walk \r\nup to a leak and press space to close it. Walk \r\nup
+    to the red button to quickly drain out a lot\r\nof water. It has a cooldown before
+    it can be \r\nused again."
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
