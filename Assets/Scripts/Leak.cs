@@ -27,7 +27,7 @@ public class Leak : MonoBehaviour {
 
         //Debug.Log(rate);
 
-        StartCoroutine(RateIncreaserRoutine());
+        //StartCoroutine(RateIncreaserRoutine());
 
         UpdateEffects();
 
